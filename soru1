@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+
+{
+	
+	int sayi,teksayi;
+	
+	cout << "Bir sayi giriniz:"; cin >> sayi;
+	
+	while(sayi>0)
+	{
+			
+		teksayi=sayi%10;
+		
+		if(teksayi%2==1)
+		{
+			
+			
+			cout<<teksayi;
+			
+		
+				
+		}	
+			
+			
+			sayi/=10;
+				
+			
+			
+			}
+	
+	
+	
+	
+		
+	}	
