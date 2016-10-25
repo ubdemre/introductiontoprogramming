@@ -1,0 +1,86 @@
+/****************************************************************************
+**
+SAKARYA ÜNİVERSİTESİ
+**
+BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+**
+BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ
+**
+PROGRAMLAMAYA GİRİŞİ DERSİ
+**
+**
+ÖĞRENCİ ADI......:Emre YILDIZ
+**
+ÖĞRENCİ NUMARASI.:g161210022
+**
+DERS GRUBU.....................:B Grubu
+****************************************************************************/
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	
+	
+int genislik,yukseklik,a,b;
+//1 ile 20 arasında değer girilip girilmediğini kontrol eder.
+do{
+	cout <<"Genisligi giriniz(1-20 arasinda deger giriniz.):"; cin>>genislik;
+		
+	if(genislik<1 || genislik>20)
+	{
+		cout<<"1-20 arasinda bir deger giriniz..."<<endl;
+	}
+
+}while(genislik>20 || genislik<1 );
+
+//1 ile 20 arasında değer girilip girilmediğini kontrol eder.
+do{
+	cout <<"Yuksekligi giriniz(1-20 arasinda deger giriniz.):"; cin>>yukseklik;
+		
+	if(yukseklik<1 || yukseklik>20)
+	{
+		cout<<"1-20 arasinda bir deger giriniz..."<<endl;
+	}
+
+}while(yukseklik<1 || yukseklik>20); 
+
+
+for(a=1;a<=yukseklik;a++)
+{
+	for(b=1;b<=genislik;b++)
+	{	
+		//
+		if(a==1 || a==yukseklik || b==1 || b==genislik)
+		{
+			cout << "*";
+		}
+		else
+		{
+			cout << " ";
+		}
+		
+		
+	}
+	cout << endl;
+}	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+}
