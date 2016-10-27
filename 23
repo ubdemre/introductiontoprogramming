@@ -1,0 +1,93 @@
+/****************************************************************************
+**
+SAKARYA ÜNİVERSİTESİ
+**
+BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+**
+BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ
+**
+PROGRAMLAMAYA GİRİŞİ DERSİ
+**
+**
+ÖĞRENCİ ADI......:Furkan Kuzu
+**
+ÖĞRENCİ NUMARASI.:g161210014
+**
+DERS GRUBU.....................:2C Grubu
+****************************************************************************/
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+
+
+	int genislik, yukseklik, i, j;
+	
+
+		do
+		{
+			cout << "Genisligi giriniz(Gireceginiz degerler 1 ve 20 arasinda olmalidir):";
+			cin >> genislik;
+
+			if (genislik<1 || genislik>20)//İstenilen değerler dışında bir değer girilirse Tekrar değer isteyecek.
+			{
+				cout << "Lutfen istenilen aralikta deger giriniz!" << endl;
+			}
+
+		}
+		while (genislik>20 || genislik<1);
+
+		do 
+		{
+
+			cout << "Yuksekligi giriniz(Gireceginiz degerler 1 ve 20 arasinda olmalidir.):";
+			cin >> yukseklik;
+
+			if (yukseklik<1 || yukseklik>20)
+			{
+				cout << "Lutfen istenilen aralikta deger giriniz!" << endl;//İstenilen değerler dışında bir değer girilirse Tekrar değer isteyecek.
+			}
+
+		}	 
+	while (yukseklik<1 || yukseklik>20);
+
+	
+	for (i = 1; i <= yukseklik; i++)
+	{
+		for (j = 1; j <= genislik; j++)
+		{
+			
+			if (i == 1 || i == yukseklik || j == 1 || j == genislik)//i ve j ifadeleri bir anlamda yıldızların oluşacağı satır ve sütunları ifade ediyor.
+			{
+				cout << "*";
+			}
+			else
+			{
+				cout << " ";
+			}
+
+
+		}
+		cout << endl;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
