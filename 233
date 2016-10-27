@@ -1,0 +1,67 @@
+/****************************************************************************
+**
+SAKARYA ÜNİVERSİTESİ
+**
+BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+**
+BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ
+**
+PROGRAMLAMAYA GİRİŞİ DERSİ
+**
+**
+ÖĞRENCİ ADI......:Furkan Kuzu
+**
+ÖĞRENCİ NUMARASI.:g161210014
+**
+DERS GRUBU.....................:2C Grubu
+****************************************************************************/
+
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+
+{
+
+	int girileceksayi, teksayi, sayinintersi=0;
+	
+	cout << "Bir sayi giriniz:";
+	cin >> girileceksayi;
+
+	
+	if (girileceksayi >= 0)
+	{
+		while (girileceksayi != 0)
+		{
+			sayinintersi = 10 * sayinintersi + girileceksayi % 10;
+			girileceksayi /= 10;
+			//Sayıyı tersine çevirdi.
+
+		}
+
+		cout << "Tek sayilar:";
+
+
+	}
+	/*
+	Programın mantığı sayıyı en başta
+	tersine çevirmesi ondan sonra mo-
+	dunu alarak çıkan tek rakamları 
+	ekrana yazdırması.
+	
+	*/
+	while (sayinintersi>0)
+	{
+		teksayi = sayinintersi % 10;
+
+		if (teksayi % 2 == 1)//Mod 2 ye göre kalan 1 ise ekrana yazdırılacak.
+		{
+			cout << teksayi;
+		}
+
+		sayinintersi /= 10;
+	}
+	cout << endl;
+}
